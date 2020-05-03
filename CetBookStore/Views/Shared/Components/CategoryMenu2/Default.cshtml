@@ -1,0 +1,11 @@
+﻿@model IEnumerable<CetBookStore.Models.Category>
+
+    <div class="custom_dropdown" style="padding-left: 0!important;margin-top: 5px;">
+        <select class="form-control" style="width: 180px;" name="Kategori">
+            <option value="">Tüm Kategoriler</option>
+            @foreach (var item in Model)
+            {
+                <option value="@item.Id">@item.Name</option>
+            }
+        </select>
+    </div>
